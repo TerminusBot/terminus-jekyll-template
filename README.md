@@ -37,12 +37,12 @@ jekyll serve
 
 ### 联系我们
 
-GitHub: Terminus2049.github.io
+GitHub: [TerminusBot](https://github.com/TerminusBot)
 
-Twitter: 2049bbs
+Twitter: [2049bbs](https://www.twitter.com/2049bbs)
 
-Forum: 2049bbs.xyz
+Forum: [2049bbs.xyz](https://2049bbs.xyz/)
 
-Telegram: Terminus2049
+Telegram: [Terminus2049](https://t.me/terminus_9402)
 
 Email: terminus2049@protonmail.com
