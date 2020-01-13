@@ -54,7 +54,7 @@ footer-links:
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
-footer-text: Powered by <a href="https://github.com/TerminusBot/terminus-jekyll-template">TerminusBot</a>
+footer-text: Powered by <a href="https://github.com/diymysite/rich-jekyll-template">DIY My Site</a>
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed

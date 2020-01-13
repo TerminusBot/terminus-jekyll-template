@@ -1,18 +1,12 @@
 ---
-
 layout: post
-
 title: 未来的文章-Markdown的语法介绍
-
 date: 2020-01-14
-
 categories: Archive
-
 tags: 示例
-
 description: 未来的文章-创建于2020-01-12-但会直到2020-01-14再发布
-
 ---
+
 注：示例来自于 <https://gist.github.com/vvtommy/4200618>
 
 首先声名，这并不是一份完整的[Markdown][1]的语法介绍，需要看完整的介绍请点击[Markdown Syntax Documentation][2]。
