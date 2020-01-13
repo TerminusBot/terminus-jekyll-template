@@ -37,4 +37,4 @@ sharebuttons:
 你可以看到默认开启的是无javascript的分享按钮。
 
 ## 计划发布
-有时候你可能提前写好博文，想等到某一天再发布，jekyll也支持这个功能，但要在Github Page上开启该功能，要在`_config.yml`中添加一行`future: false`。
+有时候你可能提前写好博文，想等到某一天再发布，jekyll 也支持这个功能，但Github Page默认不支持，要开启该功能，要在`_config.yml`中添加一行`future: false`，否则未来日期的博文会被直接发布。
