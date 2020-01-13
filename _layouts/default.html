@@ -3,7 +3,6 @@
   {% include head.html %}
   <body>
     {% include nav.html %}
-    {% include back-to-top.html %}
 
     <div id="main" role="main" class="container" style="padding-left: 15px;padding-right: 15px;">
       {{ content }}
@@ -16,6 +15,8 @@
     {% if site.sharebuttons.nojavascript %}
       {% include social-share-no-javascript.html %}
     {% endif %}
+
+    {% include back-to-top.html %}
 
     <div class="wrapper-footer">
       <div class="container">
