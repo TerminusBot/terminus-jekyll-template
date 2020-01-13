@@ -67,9 +67,9 @@ url: https://diymysite.github.io/
 baseurl: /rich-jekyll-template
 
 # Social share
-socialshare:
-  - jquery: false
-  - nojavascript: true
+sharebuttons:
+  jquery: false
+  nojavascript: true
 
 #
 # !! You don't need to change any of the configuration flags below !!

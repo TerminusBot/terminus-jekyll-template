@@ -4,16 +4,18 @@
   <body>
     {% include nav.html %}
     {% include back-to-top.html %}
-    {% if site.socialshare.jquery %}
-      {% include jquery-social-share.html %}
-    {% endif %}
-    {% if site.socialshare.nojavascript %}
-      {% include social-share-no-javascript.html %}
-    {% endif %}
 
     <div id="main" role="main" class="container" style="padding-left: 15px;padding-right: 15px;">
       {{ content }}
     </div>
+
+
+    {% if site.sharebuttons.jquery %}
+      {% include jquery-social-share.html %}
+    {% endif %}
+    {% if site.sharebuttons.nojavascript %}
+      {% include social-share-no-javascript.html %}
+    {% endif %}
 
     <div class="wrapper-footer">
       <div class="container">
