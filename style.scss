@@ -639,13 +639,13 @@ div.sticky {
 .resp-sharing-button__link {
   text-decoration: none;
   color: #fff;
-  margin: 1px; //0.5em
+  margin: 0px; //0.5em
 }
 
 .resp-sharing-button {
   border-radius: 15px;
   transition: 25ms ease-out;
-  padding: 0.2em 0.25em;
+  padding: 0.2em 0.32em;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 150%;   
 }
