@@ -273,6 +273,7 @@ img {
 }
 
 // Specify the color of the selection
+/*
 ::-moz-selection {
   color: $selection-color;
   background: $selection-background-color;
@@ -281,6 +282,7 @@ img {
   color: $selection-color;
   background: $selection-background-color;
 }
+*/
 
 // Nicolas Gallagher's micro clearfix hack
 // http://nicolasgallagher.com/micro-clearfix-hack/
@@ -605,6 +607,7 @@ div.sticky {
   z-index: 1;
 }
 //back to top
+/*
 .go-to-top{
   display:none;
   position:fixed;
@@ -625,6 +628,7 @@ div.sticky {
   border-radius:5px;
   z-index: 2;
 }
+*/
 
 // Social Share Buttons
 .resp-sharing-button__link,
@@ -635,14 +639,15 @@ div.sticky {
 .resp-sharing-button__link {
   text-decoration: none;
   color: #fff;
-  margin: 0.5em
+  margin: 0em
 }
 
 .resp-sharing-button {
-  border-radius: 5px;
+  border-radius: 7px;
   transition: 25ms ease-out;
-  padding: 0.5em 0.75em;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+  padding: 5px 12px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 25px;   
 }
 
 .resp-sharing-button__icon svg {
