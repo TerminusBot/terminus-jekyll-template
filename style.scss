@@ -607,6 +607,7 @@ div.sticky {
   z-index: 1;
 }
 //back to top
+/*
 .go-to-top{
   display:none;
   position:fixed;
@@ -627,6 +628,7 @@ div.sticky {
   border-radius:5px;
   z-index: 2;
 }
+*/
 
 // Social Share Buttons
 .resp-sharing-button__link,
@@ -643,7 +645,7 @@ div.sticky {
 .resp-sharing-button {
   border-radius: 15px;
   transition: 25ms ease-out;
-  padding: 0.3em 0.45em;
+  padding: 0.2em 0.25em;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 150%;   
 }
