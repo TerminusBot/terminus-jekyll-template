@@ -9,7 +9,7 @@ description: 未来的文章-添加插件和高级功能-创建于2020-01-12-但
 
 这篇文章介绍一些常见的扩展
 
-## 小插件
+## 功能插件
 
 ### 1. 回到首页
 
@@ -27,7 +27,7 @@ sharebuttons:
   jquery: true
   nojavascript: false
 ```
-#### 2.2 无javascript的分享按钮
+#### 2.2 无javascript的分享按钮 （推荐）
 来自 [https://sharingbuttons.io](https://sharingbuttons.io), 只需要将`_config.yml` 文件中的以下部分改为
 ```yml
 sharebuttons:
@@ -36,7 +36,7 @@ sharebuttons:
 ```
 你可以看到默认开启的是无javascript的分享按钮。
 
-### 3. 点击计数器
+### 3. 安全的流量统计
 
 #### 3.1 基于[FreeCounterStat](https://www.freecounterstat.com)的非javascript计数器
 页脚包含一个uBlock Origin认证安全的网页点击计数器，博客每获得一次点击就会累加1，这对博主而言可以大概的知道自己网站的访问量。配置方法如下：
@@ -48,6 +48,19 @@ sharebuttons:
 </a>
 ```
 将上述代码中的字符串 `ghfqhne7z87531aunzg4cqds8kfcekpa` 复制到 `_config.yml` 中的 `webcounterimg: ghfqhne7z87531aunzg4cqds8kfcekpa` 即可.
+
+这种方法只能获得大致的点击率，并不能提供较详细的流量分析，例如每日流量、各个页面的访问量、交叉来源等。
+
+#### 3.2 基于javascript但不使用cookies的流量分析 [Ticksel](https://www.ticksel.com)
+我们主要利用这两个浏览器插件来检测第三方跟踪代码：[NoScript](https://noscript.net/) 和 [uBlockOrigin](https://github.com/gorhill/uBlock)。前者可以禁止网页上的javascripts, 后者则封锁包括javascript、图片等任何可能侵犯隐私的插件。
+
+[Ticksel](https://www.ticksel.com)实现流量分析靠javascript，当javascript被禁止时则靠图片。根据Ticksel的官方网站描述，其javascript元素不使用cookies、保持对网页访问者的隐私友好、并尊重浏览器的Do Not Track标识。同时Ticksel的分析数据也是通过非对称密钥加密存放在其服务器上，也就是说你的数据除了你自己，即便是Ticksel的后台也无法访问。
+
+使用方法：第一步先注册Ticksel会员, 第二步产生Tags，第三步配置跟踪代码（主要是选择加什么Tag）这样通过不同的Tag，你可以在一个地方对自己的多个网站进行流量分析，第四步将跟踪代码复制到你的网页。对于Jekyll Kiko-now来说，可已将跟踪代码放到 `_include/footer.html`中进而布置到所有页面。
+
+具体可参考我们的[流量分析项目](https://github.com/diymysite/analytics)及其[演示站点](https://diymysite.github.io/analytics).
+
+**注意：一般来说，为保护自己的隐私，请仅在Tor环境下打开未知或实验性链接。**
 
 ## 计划发布
 有时候你可能提前写好博文，想等到某一天再发布，jekyll 也支持这个功能，但Github Page默认不支持，要开启该功能，要在`_config.yml`中添加一行`future: false`，否则未来日期的博文会被直接发布。
