@@ -62,5 +62,7 @@ sharebuttons:
 
 **注意：一般来说，为保护自己的隐私，请仅在Tor环境下打开未知或实验性链接。**
 
+如果你安装了uBlock Origin的话，可以看到uBlock Origin并没有封锁Ticksel，说明uBlock认为Ticksel是安全的。事实上因为Ticksel对隐私的保护的注重，很多ad blocker都不封锁Ticksel的流量分析脚本。
+
 ## 计划发布
 有时候你可能提前写好博文，想等到某一天再发布，jekyll 也支持这个功能，但Github Page默认不支持，要开启该功能，要在`_config.yml`中添加一行`future: false`，否则未来日期的博文会被直接发布。
