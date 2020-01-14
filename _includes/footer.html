@@ -3,3 +3,7 @@
 {% if site.footer-text %}
 <p>{{ site.footer-text }}</p>
 {% endif %}
+
+{% if site.webcounterimg %}
+<img src="https://counter1.wheredoyoucomefrom.ovh/private/freecounterstat.php?c={{ site.webcounterimg }}" border="0" title="page view counter" alt="page view counter">
+{% endif %}
