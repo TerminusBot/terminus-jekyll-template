@@ -66,6 +66,11 @@ url: https://diymysite.github.io/
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: /rich-jekyll-template
 
+# Social share
+socialshare:
+  - jquery: false
+  - nojavascript: true
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
