@@ -97,3 +97,29 @@ description: 未来的文章-添加插件和高级功能-创建于2020-01-12-但
 
 ## 计划发布
 有时候你可能提前写好博文，想等到某一天再发布，jekyll 也支持这个功能，但Github Page默认不支持，要开启该功能，要在`_config.yml`中添加一行`future: false`，否则未来日期的博文会被直接发布。
+
+计划发布需要利用Github Action，这里我们用以下代码CI代码实现除每次push作为触发之外，还会每日自动build两次，这样就可以把设定在‘未来’的post定期发布了。
+```yaml
+name: Jekyll Deploy
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '1,30 6 * * *'
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build & Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+```
+
+注意，这个发布脚本会将build好的站点发布到gh-pages分支中，所以需要你在项目的settings-->General-->Github Pages里面设置发布分支为gh-pages.
