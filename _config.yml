@@ -71,6 +71,15 @@ sharebuttons:
   jquery: false
   nojavascript: true
 
+gitalk:
+  clientID: # 09a67b9b7e8204bb577e
+  clientSecret: # 3a3f8d975a81c202d7909562687bf7ebd161f155
+  repo: # Comments
+  owner: # DamoresClub
+  admin:
+    - DamoresClub
+    - TerminusBot
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
