@@ -4,6 +4,7 @@ title: 未来的文章-添加插件和高级功能
 date: 2020-01-14
 categories: Archive
 tags: 示例
+comments: true
 description: 未来的文章-添加插件和高级功能-创建于2020-01-12-但会直到2020-01-14再发布
 ---
 
@@ -61,6 +62,35 @@ sharebuttons:
 具体可参考我们的[流量分析项目](https://github.com/diymysite/analytics)及其[演示站点](https://diymysite.github.io/analytics).
 
 **注意：一般来说，为保护自己的隐私，请仅在Tor环境下打开未知或实验性链接。**
+
+## 评论区
+推荐使用gitalk模块将Github Issue作为评论区，具体设置请参考[这里](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)。注意，申请好的clientID等参数放到`_config.yml`中，如下：
+
+```yaml
+gitalk:
+  clientID: ac14c26bcf8a16e03567
+  clientSecret: 443574e2aa0e8bccf03adac267a82fdaa0a346c2
+  repo: blog
+  owner: diymysite
+  admin:
+    - DamoresClub
+    - TerminusBot
+    - chinatimeline
+    - diymysite
+```
+
+另外，要开启评论区的页面的YAML参数区设置`comments: ture`, 参考本页
+```yaml
+---
+layout: post
+title: 未来的文章-添加插件和高级功能
+date: 2020-01-14
+categories: Archive
+tags: 示例
+comments: true
+description: 未来的文章-添加插件和高级功能-创建于2020-01-12-但会直到2020-01-14再发布
+---
+```
 
 ## 计划发布
 有时候你可能提前写好博文，想等到某一天再发布，jekyll 也支持这个功能，但Github Page默认不支持，要开启该功能，要在`_config.yml`中添加一行`future: false`，否则未来日期的博文会被直接发布。
