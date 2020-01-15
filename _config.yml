@@ -72,13 +72,15 @@ sharebuttons:
   nojavascript: true
 
 gitalk:
-  clientID: # 09a67b9b7e8204bb577e
-  clientSecret: # 3a3f8d975a81c202d7909562687bf7ebd161f155
-  repo: # Comments
-  owner: # DamoresClub
+  clientID: ac14c26bcf8a16e03567
+  clientSecret: 443574e2aa0e8bccf03adac267a82fdaa0a346c2
+  repo: blog
+  owner: diymysite
   admin:
     - DamoresClub
     - TerminusBot
+    - chinatimeline
+    - diymysite
 
 #
 # !! You don't need to change any of the configuration flags below !!
