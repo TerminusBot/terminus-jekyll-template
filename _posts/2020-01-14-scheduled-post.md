@@ -122,4 +122,6 @@ jobs:
         uses: BryanSchuetz/jekyll-deploy-gh-pages@master
 ```
 
-注意，这个发布脚本会将build好的站点发布到gh-pages分支中，所以需要你在项目的settings-->General-->Github Pages里面设置发布分支为gh-pages.
+注意:
+1. 这个发布脚本会将build好的站点发布到gh-pages分支中，所以需要你在项目的settings-->General-->Github Pages里面设置发布分支为gh-pages.
+2. 因为Github Action自身的局限，这种计划发布功能仅适用于repo page (类似https://username.github.io/blog/) 而 **无法用于 User Page (类似https://username.github.io/)** . 
