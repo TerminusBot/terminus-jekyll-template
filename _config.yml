@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: 网站名称
+name: DIY My Site
 
 # Short bio or description (displayed in the header)
-description: 一句话介绍
+description: 我做一遍你就不必重新发明轮子了
 
 #
 # Flags below are optional
@@ -70,6 +70,18 @@ baseurl: /blog
 sharebuttons:
   jquery: false
   nojavascript: true
+
+gitalk:
+  clientID: ac14c26bcf8a16e03567
+  clientSecret: 443574e2aa0e8bccf03adac267a82fdaa0a346c2
+  repo: blog
+  owner: diymysite
+  admin:
+    - DamoresClub
+    - TerminusBot
+    - chinatimeline
+    - diymysite
+
 
 #
 # !! You don't need to change any of the configuration flags below !!

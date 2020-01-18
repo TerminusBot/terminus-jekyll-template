@@ -4,10 +4,14 @@ title: 未来的文章-添加插件和高级功能
 date: 2020-01-14
 categories: Archive
 tags: 示例
+comments: true
 description: 未来的文章-添加插件和高级功能-创建于2020-01-12-但会直到2020-01-14再发布
 ---
 
-这篇文章介绍一些常见的扩展
+这篇文章介绍如何添加一些常见的插件和功能扩展。
+
+* 无数字的目录
+{:toc}
 
 ## 功能插件
 
@@ -64,5 +68,62 @@ sharebuttons:
 
 如果你安装了uBlock Origin的话，可以看到uBlock Origin并没有封锁Ticksel，说明uBlock认为Ticksel是安全的。事实上因为Ticksel对隐私的保护的注重，很多ad blocker都不封锁Ticksel的流量分析脚本。
 
+## 评论区
+推荐使用gitalk模块将Github Issue作为评论区，具体设置请参考[这里](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)。注意，申请好的clientID等参数放到`_config.yml`中，如下：
+
+```yaml
+gitalk:
+  clientID: ac14c26bcf8a16e03567
+  clientSecret: 443574e2aa0e8bccf03adac267a82fdaa0a346c2
+  repo: blog
+  owner: diymysite
+  admin:
+    - DamoresClub
+    - TerminusBot
+    - chinatimeline
+    - diymysite
+```
+
+另外，要开启评论区的页面的YAML参数区设置`comments: ture`, 参考本页
+```yaml
+---
+layout: post
+title: 未来的文章-添加插件和高级功能
+date: 2020-01-14
+categories: Archive
+tags: 示例
+comments: true
+description: 未来的文章-添加插件和高级功能-创建于2020-01-12-但会直到2020-01-14再发布
+---
+```
+
 ## 计划发布
 有时候你可能提前写好博文，想等到某一天再发布，jekyll 也支持这个功能，但Github Page默认不支持，要开启该功能，要在`_config.yml`中添加一行`future: false`，否则未来日期的博文会被直接发布。
+
+计划发布需要利用Github Action，这里我们用以下代码CI代码实现除每次push作为触发之外，还会每日自动build两次，这样就可以把设定在‘未来’的post定期发布了。
+```yaml
+name: Jekyll Deploy
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '1,30 6 * * *'
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build & Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
+          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+        uses: BryanSchuetz/jekyll-deploy-gh-pages@master
+```
+
+注意:
+1. 这个发布脚本会将build好的站点发布到gh-pages分支中，所以需要你在项目的settings-->General-->Github Pages里面设置发布分支为gh-pages.
+2. 因为Github Action自身的局限，这种计划发布功能仅适用于repo page (类似https://username.github.io/blog/) 而 **无法用于 User Page (类似https://username.github.io/)** .
