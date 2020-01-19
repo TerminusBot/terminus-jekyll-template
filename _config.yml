@@ -132,6 +132,7 @@ algolia:
   search_only_api_key: 533d855435d988fee73b330d3df4e41c
   files_to_exclude: [404.md, about.md, README.md]
 
+destination: build
 
 future: false
 
