@@ -127,4 +127,5 @@ jobs:
 注意:
 1. 你需要先申请一个Personal Access Token, 在项目的settings-->secret中添加一个新的secret,名字叫ACCESS_TOKEN数值是生成的Token.
 2. 这个发布脚本会将build好的站点发布到gh-pages分支中，所以需要你在项目的settings-->General-->Github Pages里面设置发布分支为gh-pages.
-3. 因为Github Action自身的局限，这种计划发布功能仅适用于repo page (类似https://username.github.io/blog/) 而 **无法用于 User Page (类似https://username.github.io/)** .
+3. 在`_config.yml`中加上`destination: build`避免编译出错
+4. 因为Github Action自身的局限，这种计划发布功能仅适用于repo page (类似https://username.github.io/blog/) 而 **无法用于 User Page (类似https://username.github.io/)** .
