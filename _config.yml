@@ -15,6 +15,8 @@ description: 我们的征途是星程大海
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://user-images.githubusercontent.com/35519242/74657156-9861a080-51ca-11ea-9f09-8228d14f0e5b.png
 
+# 你的favicon（出现在浏览器tab上）图片URL，建议使用较小(64px × 64px)的图片
+favicon: https://raw.githubusercontent.com/FromEndWorld/LOFFER/master/images/favicon.png
 
 # Tabs in header. There are 'Blog', 'About', 'Archive', 'Tags'
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
@@ -38,19 +40,19 @@ paginate: 20
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email: terminus2049@protonmail.com
+  email: tzllxz@gmail.com
   facebook:
   flickr:
-  github: TerminusBot/terminus-jekyll-template
+  github: our-earth
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram:
   linkedin:
-  telegram: terminus_9402
+  telegram:
   pinterest:
-  rss: atom.xml # just type anything here for a working RSS icon
+  rss: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
-  twitter: 2049bbs
+  twitter: ai10833546
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
@@ -58,7 +60,11 @@ footer-text: Powered by <a href="https://github.com/TerminusBot/terminus-jekyll-
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://terminusbot.github.io/
+url: https://our-earth.github.io/Blog/
+
+# 评论，注意，请不要同时添加多种不同的评论区
+# 输入Disqus shortname，即可添加评论区
+disqus: Blog #shortname
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -66,10 +72,6 @@ url: https://terminusbot.github.io/
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: /Blog
 
-# 评论，注意，请不要同时添加多种不同的评论区
-
-# 输入Disqus shortname，即可添加评论区
-disqus: Blog #shortname
 
 
 #
