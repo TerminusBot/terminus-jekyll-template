@@ -18,7 +18,7 @@
 2. fork https://github.com/TerminusBot/terminus-jekyll-template
 3. 在 Settings 中打开 GitHub Page，source 选择“master branch”
 4. 在 Settings 中将项目名称改为 Blog，
-修改 fork 后的仓库，将 `_config.yml` 中第 68 行 baseurl: # /Terminus 改为 baseurl: Blog，修改注释中的其他信息，没有的留空。about 页面修改 `about.md` 文件即可。
+修改 fork 后的仓库，将 `_config.yml` 中第 68 行 baseurl: # /Terminus 改为 baseurl: /Blog，修改注释中的其他信息，没有的留空。about 页面修改 `about.md` 文件即可。
 
 然后就可以通过 `https://<username>.github.io/Blog` 访问。写文章的办法就是按照 [\_posts](https://github.com/TerminusBot/terminus-jekyll-template/tree/master/_posts) 文件夹中的格式写就行，当然你需要了解一点 [Markdown](https://www.jianshu.com/p/q81RER) 语法。
 
