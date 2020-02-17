@@ -64,7 +64,7 @@ url: https://our-earth.github.io/Blog/
 
 # 评论，注意，请不要同时添加多种不同的评论区
 # 输入Disqus shortname，即可添加评论区
-disqus: Blog #shortname
+disqus: stupidhumanblog #shortname
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
