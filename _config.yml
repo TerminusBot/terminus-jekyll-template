@@ -66,6 +66,12 @@ url: https://terminusbot.github.io/
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: /Blog
 
+# 评论，注意，请不要同时添加多种不同的评论区
+
+# 输入Disqus shortname，即可添加评论区
+disqus: Blog #shortname
+
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
