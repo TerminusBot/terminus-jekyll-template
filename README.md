@@ -6,7 +6,8 @@
 
 反馈或功能添加请前往 https://2049bbs.xyz/
 
-仓库地址 TerminusBot/terminus-jekyll-template
+仓库地址 [TerminusBot/terminus-jekyll-template](https://github.com/TerminusBot/terminus-jekyll-template)
+
 使用此模板的网站
 
 * https://terminus2049.github.io/
@@ -17,10 +18,9 @@
 1. 注册 GitHub
 2. fork https://github.com/TerminusBot/terminus-jekyll-template
 3. 在 Settings 中打开 GitHub Page，source 选择“master branch”
-4. 在 Settings 中将项目名称改为 Blog，
-修改 fork 后的仓库，将 `_config.yml` 中第 68 行 baseurl: # /Terminus 改为 baseurl: /Blog，修改注释中的其他信息，没有的留空。about 页面修改 `about.md` 文件即可。
-
-然后就可以通过 `https://<username>.github.io/Blog` 访问。写文章的办法就是按照 [\_posts](https://github.com/TerminusBot/terminus-jekyll-template/tree/master/_posts) 文件夹中的格式写就行，当然你需要了解一点 [Markdown](https://www.jianshu.com/p/q81RER) 语法。
+4. 在 Settings 中修改项目名称，如 Blog（或者其他任何英文名称），然后你就可以在`https://yourusername.github.io/blog`看到你的网站。
+5. 在`about.md`文件中修改个人简介，在 `_config.yml`文件中修改网站名和网站简介。
+6. 按照 [\_posts](https://github.com/TerminusBot/terminus-jekyll-template/tree/master/_posts) 文件夹中的格式写文章，新文章以`yyyy-mm-dd-engligh-title.md` 的格式命名，放在 `_posts` 文件夹下。
 
 ### 名称来源
 
