@@ -8,7 +8,7 @@ date: 2018-04-20
 
 categories: Archive
 
-tags: 示例
+tags: 读书笔记
 
 description: Markdown的语法介绍，很简单很好用是不是？
 
