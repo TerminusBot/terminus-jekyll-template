@@ -6,12 +6,13 @@ title: Markdown的语法介绍
 
 date: 2018-04-20
 
-categories: Archive
+categories: NLP
 
-tags: 读书笔记
+tags: 技术
 
 description: Markdown的语法介绍，很简单很好用是不是？
 
+is_sticky: true
 ---
 
 注：示例来自于 <https://gist.github.com/vvtommy/4200618>
