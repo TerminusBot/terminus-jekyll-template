@@ -14,12 +14,11 @@ description: Markdown的语法介绍，很简单很好用是不是？
 
 is_sticky: true
 ---
+@[TOC](文章目录)
 
 注：示例来自于 <https://gist.github.com/vvtommy/4200618>
 
 首先声名，这并不是一份完整的[Markdown][1]的语法介绍，需要看完整的介绍请点击[Markdown Syntax Documentation][2]。
-
-@[TOC](文章目录)
 
 ### 段落
 
