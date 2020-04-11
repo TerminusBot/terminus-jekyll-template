@@ -1,58 +1,55 @@
-# terminus-jekyll-template
+[toc]
 
-基于 [kiko-now](https://github.com/AWEEKJ/kiko-now) 项目，针对中文做了若干优化，增加了置顶、搜索、GitHub Corner 等功能。
+## 前言
 
-仅仅配置 `_config.yml` 文件即可。
+这是我搭建的第一个博客，fork from [一分钟搭网站和博客](https://github.com/TerminusBot/terminus-jekyll-template)
 
-反馈或功能添加请前往 https://2049bbs.xyz/
+- 历程
 
-仓库地址 TerminusBot/terminus-jekyll-template
-使用此模板的网站
+> 以前就有写个人博客的想法了，为了最快地实现，在前端不是很熟悉的情况下，就暂时忠于原仓库的朴素风格。此外，我也不想花太多时间来把玩，内容更重要，阮一峰的博客，其实就很朴素整洁，但并没有影响他的影响力。
+>
+> 评论功能捣鼓了小半天，没成功，故暂时没有开通，等待哪天心情好了，再捣鼓捣鼓，甚至是新建个稍微花哨一点的博客也可以。
 
-* https://terminus2049.github.io/
-* https://terminus2049.github.io/1984bbs/
+- 我为什么要起StupidHuman这个网名
 
-### 使用指南
+> 借现在大火的人工智能，站在上帝视角来看，人都是不理性的，对此要自知，因此StupidHuman算是一种自我提醒和鞭策。
 
-1. 注册 GitHub
-2. fork https://github.com/TerminusBot/terminus-jekyll-template
-3. 在 Settings 中打开 GitHub Page，source 选择“master branch”
-4. 在 Settings 中将项目名称改为 Blog，
-修改 fork 后的仓库，将 `_config.yml` 中第 68 行 baseurl: # /Terminus 改为 baseurl: /Blog，修改注释中的其他信息，没有的留空。about 页面修改 `about.md` 文件即可。
+- 我准备做什么
 
-然后就可以通过 `https://<username>.github.io/Blog` 访问。写文章的办法就是按照 [\_posts](https://github.com/TerminusBot/terminus-jekyll-template/tree/master/_posts) 文件夹中的格式写就行，当然你需要了解一点 [Markdown](https://www.jianshu.com/p/q81RER) 语法。
+>**作为个人博客的仓库，我想在这里分享技术文章、读书笔记以及其他一些自己的思考和学习等。用输出倒闭输入来促进自己进步。** 
+>
+>为了践行输出价值的核心理念，我不会考虑输入广告，我也不会写博眼球的文章或者无病呻吟。
+>
+>*现在理财文章更新得比较频繁，因为近期在学习理财的知识，来源是BT学院的艾财学堂，主要是股票、基金。——20200411*
 
-### 名称来源
+文章会不定时更新，对了，我还有个微信公众号，打算两处同步更新。微信公众号每天只能群发一次且只能修改一次的限制，导致我在这里更新得更快些。如果有兴趣，可以瞅瞅。
 
-> 在审判中，谢顿说出他的预言，语惊四座。他计划领导众多学者编辑一本包含全人类知识的《银河百科全书》，以此减缓帝国殒落的后遗症。委员会得知他的计划并非颠覆帝国的阴谋诡计后，将哈里·谢顿的团队连同他的计划放逐到银河系的边缘端点星。
+![Alt](https://user-images.githubusercontent.com/35519242/76520646-44329f00-649e-11ea-8b6d-821756aea702.jpg)
 
-## 本地预览
+## 文章分类
 
-```
-gem install bundler jekyll
-gem install jekyll-paginate
-gem install jekyll-seo-tag
-gem install jekyll-sitemap
-git clone --depth=1 https://github.com/Terminus2049/Terminus2049.github.io.git
-cd terminus2049.github.io
-jekyll serve
-```
 
-### 开源程序
 
-- 博客模板 [kiko-now](https://github.com/AWEEKJ/kiko-now)
-- 字体方案 <http://cosx.org>
-- [GitHub Corners](http://tholman.com/github-corners/)
-- [pangu.js](https://github.com/vinta/pangu.js)
+### 1. 理财系列文章
 
-### 联系我们
+#### 小白理财思维入门
 
-GitHub: [TerminusBot](https://github.com/TerminusBot)
+#### 基金初级班系列
 
-Twitter: [2049bbs](https://www.twitter.com/2049bbs)
+#### 股票初级班系列
 
-Forum: [2049bbs.xyz](https://2049bbs.xyz/)
+#### 保险版系列
 
-Telegram: [Terminus2049](https://t.me/terminus_9402)
+### 2. 技术系列文章
 
-Email: terminus2049@protonmail.com
+### 3. 读书笔记
+
+
+
+## 联系我
+
+GitHub：[StupidHuman](https://github.com/Stupid-Human)
+
+Email：tzllxz@gamil.com 
+
+Wechat：why-what-how-do
