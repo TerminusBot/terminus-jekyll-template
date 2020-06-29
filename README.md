@@ -19,6 +19,6 @@
 >文章会优先放到博客，不定时更新到自己的微信公众号。
 >
 >![Alt](https://user-images.githubusercontent.com/35519242/76520646-44329f00-649e-11ea-8b6d-821756aea702.jpg)
-
+>个人博客效果展示——[Stupid Human](https://stupid-human.github.io/Blog/),可以通过顶部标签及分类来查阅文章。现在的功能很是简陋，即使存在“密密麻麻地堆积”等问题，我也暂时不管了，内容更重要!!!
  
  
