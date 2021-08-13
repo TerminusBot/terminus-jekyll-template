@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: 网站名称
+name: bone
 
 # Short bio or description (displayed in the header)
-description: 一句话介绍
+description: 星宿之间
 
 #
 # Flags below are optional
@@ -20,7 +20,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # and URL Link(e.g. 'Theme' tab below) tabs. If you don't need one, just delete
 # it from the list(Delete '- name: ' and 'url: ', too!)
 navigation:
-  - name: 首页
+  - name: bone
     url: /
   - name: 标签
     url: /tags.html
@@ -38,19 +38,19 @@ paginate: 20
 footer-links:
   behance: # https://www.behance.net/<username>
   dribbble:
-  email: terminus2049@protonmail.com
+  email: bonelingu@gmail.com
   facebook:
   flickr:
-  github: TerminusBot/terminus-jekyll-template
+  github: bonelingu
   googleplus: # anything in your profile username that comes after plus.google.com/
   instagram:
   linkedin:
-  telegram: terminus_9402
+  telegram: 
   pinterest:
-  rss: atom.xml # just type anything here for a working RSS icon
+  rss: atom.bone # just type anything here for a working RSS icon
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   tumblr: # https://<username>.tumblr.com
-  twitter: 2049bbs
+  twitter: 
   youtube: # channel/<your_long_string> or user/<user-name>
 
 # Text under the icons in footer
