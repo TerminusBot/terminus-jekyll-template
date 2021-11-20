@@ -6,8 +6,10 @@
 
 
 文章会优先放到博客，偶尔更新到微信公众号。
+
 ![Alt](https://user-images.githubusercontent.com/35519242/76520646-44329f00-649e-11ea-8b6d-821756aea702.jpg)
 
+建设历史：
 
 step1. fork from [一分钟搭网站和博客](https://github.com/TerminusBot/terminus-jekyll-template)  ——2020
  
